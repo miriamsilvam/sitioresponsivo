@@ -1,0 +1,245 @@
+*{
+margin:0px;
+padding: 0px;
+box-sizing: border-box;
+}
+body{
+font-family: 'Roboto', sans-serif;
+}
+a{
+text-decoration: none;
+}
+
+.margen{
+padding: 0px 50px ;
+
+}
+.padre{
+display: flex;
+flex-flow: column nowrap;
+}
+
+.header{
+background: url(imagenes/bg-2.jpg);
+background-position: center;
+background-attachment: contain;
+background-size: cover;
+display: flex;
+flex-flow: column nowrap;  
+}
+
+.menu{
+background:  #bee5d3 (0, 0, 0, .1);
+display: flex;
+flex-flow: row nowrap;
+align-items: center;
+height: 100px;
+border-bottom: 3px solid rgba(255, 255, 255, .5);
+}
+
+.logo{
+flex:1 1 auto;
+}
+
+.logo a {
+color:#fff;
+font-size: 25px;
+}
+
+.logo a:hover{
+color:#343434;
+}
+
+.nav{
+flex:5 1 auto;
+}
+
+.nav a {
+color: #fff;
+font-size: 12px;
+text-transform: uppercase;
+padding: 0px 10px;
+letter-spacing: 2px;
+}
+
+.social{
+flex:1 1 auto;
+display: flex;
+}
+
+.social a {
+font-size: 20px;
+color: #fff;
+padding: 0px 5px; 
+}
+
+.social a:hover {
+color: #343434;
+}
+
+.texto-principal{
+height: 550px;
+display: flex;
+align-items: center;
+}
+
+.texto-principal h1{
+font-family: 'Open Sans', sans-serif;
+font-size: 22px;
+color: #fff;
+font-weight: 200;
+text-align: center;
+line-height: 1.6;
+}
+
+.section{
+background: #bee5d3;
+display: flex;
+}
+
+.articulos{
+background:  #d6b0b1;
+flex: 2 1 auto;
+display: flex;
+flex-flow: row wrap;
+}
+
+.article{
+flex: 1 1 45%;
+color: #444;
+font-size: 14px;
+letter-spacing: 1px;
+margin: 10px 10px 0px 0px;
+background: #efd9d1;
+}
+
+.article img{
+width: 100%;
+}
+
+.article a {
+color:#fff;
+font-size: 13px;
+padding: 10px;
+background: #000;
+margin: 10px 0px;
+display: inline-block;
+}
+
+.article a:hover{
+background: #546cc3;
+}
+
+.article h3 {
+color: #fff;
+font-size: 14px;
+padding: 10px 0px;
+margin-top: -80px;
+}
+
+.article h2 {
+font-size: 25px;
+text-transform: uppercase;
+padding: 0px 0px 10px 0px;
+color: #fff;
+}
+
+.navegacion{
+background: #000;
+flex: 1 1 100%;
+margin: 10px 10px 0px 0px;
+}
+.navegacion a{
+color:#fff;
+font-size: 11px;
+text-transform: uppercase;
+padding: 0px 10px;
+letter-spacing: 2px;
+}
+
+.aside{
+flex: 1 1 auto;
+margin: 10px 5px 10 px 0px;
+}
+
+.aside img{
+width: 100px;
+}
+
+.aside h4{
+background: #000;
+color: #fff;
+padding: 10px;
+text-transform: uppercase;
+}
+
+.publicidad{
+
+}
+
+.footer{
+background: #000;
+display: flex;
+justify-content: center;
+margin-top: 15px;
+height: 50px;
+}
+
+.pie{
+color:#fff;
+font-size: 15px;
+text-align: center;
+padding-top: 10px;
+}
+
+.pie a {
+color:#fff;
+}
+
+.pie a:hover{
+color: #918787;
+}
+
+@media all and (max-width:1120px){
+.section{
+flex-direction: column;
+}    
+.menu{
+flex-direction: column;
+height:auto ;
+}
+.aside{
+display: flex;
+justify-content: center;
+}
+.texto-principal h1{
+font-size: 15px;
+}
+.texto-principal{
+height: 400px;
+}
+} 
+
+@media all and (max-width:760px){
+.articulos{
+flex-direction: column;
+}
+.texto-principal h1{
+font-size: 12px;
+}
+}
+
+@media all and (max-width:600px){
+.off{
+display: none;    
+}
+.nav a{
+font-size: 25px;
+}
+}
+
+@media all and (max-width:400px){
+.aside{
+flex-direction: column;
+}
+}
